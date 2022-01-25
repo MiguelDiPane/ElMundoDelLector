@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+html,
+body{
+    font-size: 1rem;
+    color: white;
+    background: white
+}
+
+/* - HEADER Y NAVBAR -*/ 
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10%;
+}
+
+header{
+    height: 100vh;
+    background: #314182;
+}
+
+.barranav{
+    background: #314182;
+    padding: 0 5% 0 5%;
+}
+
+.buscador{
+    height: 45px;
+}
+
+.buscador img{
+    max-width: 25px;
+}
+.buscador input{
+    font-size: 0.8rem;
+}
+.buscador p{
+    font-size: 0.9rem;
+    padding-top: 5%;
+    color: rgba(255, 255, 255, 0.746);
+}
+
+@media only screen and (max-width: 1100px) {
+    #textoLargo {
+        display: none;
+    }
+}
+.carrito{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 20px;
+}
+
+/*- Elementos del header -*/
+.carousel-item {
+    min-height: 350px;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+.encabezado{
+    height: 90%;
+}
+
+/*- BOTONES -*/
+.btn{
+    background: #cf775a;
+    border: none;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 1.5% 2% 1.5% 2%;
+    color: white;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: #fb7345;
+    color: white;
+}
+
+/* - SECCIONES DEL HOME -*/
+.seccion{
+    color: #707070;
+}
+
+hr{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: 1px solid #707070;
+    width: 50%;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* 1- RECOMENDADOS DE LA SEMANA -*/
+.carrusel-recomendados{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    min-height: 65vh;
+}
+.recomendado{
+    padding-left: 9%;
+}
+
+/* 2- NOVEDADES - */
+.seccion-novedades{
+    background: #F9F9F9;
+}
+.seccion-novedades h3{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.seccion-novedades .carousel-inner{
+    max-width: 380px;
+    min-width: 380px;
+}
+.seccion-novedades .tituloCarrusel{
+    line-height: 1.5;
+}
+.seccion-novedades .img-novedades{
+    max-width: 350px;
+}
+/* - Tarjetas con portadas de los libros - */
+.card-novedades{
+    background: none;
+    border: none;
+    min-width: 120px;
+    max-width: 170px;
+    margin: 2px;
+    padding-top:1%;
+    padding-bottom: 1%;
+    max-height: 350px;
+}
+
+.card-novedades-img-top {
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 230px;
+    min-height: 230px;
+    transition: transform 0.5s; /* Animation */
+    border-radius: 5px;
+}
+.card-novedades-img-top:hover{
+    transform:scale(1.03);
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.6;  
+}
+
+.card-novedades-body{
+    padding: 5% 0 0 0;
+    max-height: 80px;
+}
+
+.card-novedades h3{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 10px;
+}
+.card-novedades h4,p{
+    font-size: 1rem;
+    font-weight: 200;
+    line-height : 15px;
+}
+.card-novedades p{
+    color: #cf775a;
+}
+
+/* 3- Promociones - */
+.carrusel-promos{
+    margin-top: 5%;
+    padding: 0 7.5% 5% 7.5%;
+}
+
+.carrusel-promos h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.carrusel-promos h4{
+    font-size: 1rem;
+    font-weight: 200;
+    color: #cf775a;
+}
+
+.carrusel-promos .card{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -7px #0000007a;
+    padding: 5px;
+}
+
+/* 4- Eventos - */
+.seccion-eventos{
+    background: #F9F9F9;
+}
+
+.eventos{
+    padding: 2.5%;
+}
+.video{
+    width: 100%;
+    min-height: 315px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -7px #0000007a;
+}
+
+.imagenEventos{
+    min-height: 290px;
+}
+
+.carrusel-eventos{
+    padding: 0 5% 0 5%;
+}
+.carrusel-eventos img{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -7px #0000007a;
+    padding-top: 5px;
+}
+
+/* 5- Proveedores - */
+.seccion-proveedores p{
+    font-size: 1.2rem;
+}
+
+
+/* - FOOTER - */
+footer{
+    background: #314182;
+}
+.logoFooter{
+    max-width: 50px;
+    max-height: 50px;
+}
+footer h1{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+footer h2{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.mediosPago img{
+    max-width: 50px;
+    max-height: 50px; 
+}
+footer hr{
+    border-top: 1px solid #ffffff;
+    width: 100%;
+}
+footer .redesSociales img{
+    width: 25px;
+    margin: 5% 5px 1% 5px;
+}
+
+/* - REDES SOCIALES -*/
+.redesSociales{
+    justify-content: center;
+}
+.redesSociales img{
+    width: 30px;
+    margin: 0 1% 5% 1%;
+}
+.redesSociales img:hover{
+    opacity: 0.7;
+}
+
+/*--------------------------------*/
+/*   PARTICULARES PARA CATALOGO   */
+/*--------------------------------*/
+
+.titulo{
+    margin-top: 5%;
+}
+
+.filtros{
+    box-shadow: 0px 10px 15px -7px #0000007a;
+    border-radius: 10px;
+    padding: 10%;
+}
+.filtros h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.filtros h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.filtros hr{
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+.btn_filtro{
+    width: 50%;
+    min-height: 35px;
+    margin-left: 25%;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #tituloFiltros {
+        display: none;
+    }
+}
+
+
+.form-check-input:checked{
+    background-color: #cf775a;
+}
+
+
+.tabs-catalogo{
+    margin-left: 2.5%;
+}
+.tabs-catalogo .nav-item{
+    width: 25%;
+}
+.tabs-catalogo .nav-link p{
+    color:#707070;
+    font-size: 1.2rem;
+}
+.tabs-catalogo .nav-link:hover p{
+    color:#cf775a;
+}
+.tabs-catalogo .nav-link:focus p{
+    color:#cf775a;
+    font-weight: 500;
+}
+
+.tab-catalogo{
+    padding: 5%;
+}
+.iconos-tabs{
+    width: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+    .tabs-catalogo .nav-link p {
+        display: none;
+    }
+}
+
+.texto-tab-movil{
+    color:#cf775a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #dfdede;
+    border-width: 50%;
+}
+@media only screen and (min-width: 800px) {
+    .texto-tab-movil {
+        display: none;
+    }
+}
+
+.form-range::-webkit-slider-thumb {
+    background: #cf775a;
+  }
+  .form-range::-webkit-slider-thumb:active {
+    background: #cf775a8e;
+  } 
+
+/*--------------------------------------*/
+/* - PARTICULARES PARA PAGINA CONTACTO  */
+/*--------------------------------------*/
+
+.imgContacto{
+    max-height: 300px;
+}
+
+.formularioContacto{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.controlForm{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px #70707070 solid;
+    resize: none;
+}
+.controlForm:focus{
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.sucursales{
+    margin-top: 5%
+}
+.mapa{
+    width: 100%;
+    min-height: 400px;
+    border-radius: 10px;
+}
+

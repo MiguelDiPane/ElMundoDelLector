@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/flaticon.ico">
+    <title>Catalogo</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div class="container-fluid sticky-top barranav">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="/img/logo.svg"  class="logo" alt="" srcset="">El Mundo del Lector</a>       
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                    <a class="nav-link active" href="/catalogo.html">Catálogo</a>
+                    <a class="nav-link" href="/contacto.html">Contacto</a>
+                </div>
+                </div>
+        </nav>
+
+        <div class="row justify-content-between  buscador">
+            <div class="col-9">
+                <form class="d-flex align-items-center">
+                    <input class="form-control me-2" type="search" placeholder="Buscar por título o autor" aria-label="Search">
+
+                    <a href="#!"><img src="/img/lupa.svg" alt="" srcset=""></a>
+                </form> 
+            </div>
+            <div class="col-auto">
+                <p id="textoLargo">0 productos | AR$ 0.00</p>
+            </div>
+            <div class="col-auto carrito">
+                <a href="#!"> <img src="/img/carrito.svg" alt="" srcset=""></a> 
+            </div>
+        </div>
+    </div>
+
+    <!--CATALOGO-->
+    <section class="container-fluid seccion">
+        <h2 class="text-center titulo">Nuestro catálogo</h2>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="btn navbar-toggler btn_filtro" type="button" data-bs-toggle="collapse" data-bs-target="#navi" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">Filtrar por</button>
+                        <div class="row collapse navbar-collapse" id="navi">
+                            <div class="col filtros">
+                                <h3 id="tituloFiltros">Filtrar por</h3>
+                                <hr>
+                                <h4>Rango de precios</h4>
+                                <input type="range" class="form-range">
+                                <div class="d-flex justify-content-between">
+                                    <p>0$</p>
+                                    <p>10000$</p>
+                                </div>
+                                <hr>
+                                <h4>Narrativa</h4>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">Argentina</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Clásicos</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Ciencia Ficción</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Fantasía</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Policiales</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Humor</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Históricas</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Terror</label>
+                                </div>
+                                <hr>
+                                <h4>Editorial</h4>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">Alfaguara</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Anagrama</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Penguin</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Planeta</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Salamandra</label>
+                                </div>
+                                <hr>
+                                <h4>Edad</h4>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">Todas las edades</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Niños</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Adolescentes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Adultos jóvenes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Adultos</label>
+                                </div>
+                                <hr>
+                                <h4>Idioma</h4>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">Español</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Inglés</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Italiano</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label" for="flexCheckDefault">Portugués</label>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>               
+                </div>
+                <!--Catalogo Tabs-->
+                <div class="col-lg-7 tabs-catalogo">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                <div class="row justify-content-start align-items-end">
+                                    <div class="col-sm-auto">
+                                        <img src="/img/iconosTabs/ficcion.svg" class="iconos-tabs" alt="ficcion" srcset="">
+                                    </div>
+                                    <div class="col-sm-auto"><p>Ficción</p></div>
+                                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"> 
+                                <div class="row justify-content-start align-items-end">
+                                    <div class="col-sm-auto">
+                                        <img src="/img/iconosTabs/noficcion.svg" class="iconos-tabs" alt="ficcion" srcset="">
+                                    </div>
+                                    <div class="col-sm-auto"><p>No ficción</p></div>
+                                </div>
+                            </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab2" data-bs-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">
+                                    <div class="row justify-content-start align-items-end">
+                                        <div class="col-sm-auto">
+                                            <img src="/img/iconosTabs/juveniles.svg" class="iconos-tabs" alt="ficcion" srcset="">
+                                        </div>
+                                        <div class="col-sm-auto"><p>Juveniles</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab3" data-bs-toggle="tab" href="#profile3" role="tab" aria-controls="profile3" aria-selected="false">
+                                    <div class="row justify-content-start align-items-end">
+                                        <div class="col-sm-auto">
+                                            <img src="/img/iconosTabs/infantiles.svg" class="iconos-tabs" alt="ficcion" srcset="">
+                                        </div>
+                                        <div class="col-sm-auto"><p>Infantiles</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active tab-catalogo" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <!-- Catalogo Grid-->
+                            <div class="col-auto">
+                                    <div class="row justify-content-center mb-3">
+                                        <p class="text-center texto-tab-movil">Ficción</p>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada3.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada4.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades" >
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada5.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada6.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>    
+                                    </div>               
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada9.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada10.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada11.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada12.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada25.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada26.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada27.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada28.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>               
+                            </div>                       
+                        </div>
+
+                        <div class="tab-pane fade tab-catalogo" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <!-- Catalogo Grid-->
+                                <div class="col-auto">
+                                    <div class="row justify-content-center mb-3">
+                                        <p class="text-center texto-tab-movil">No ficción</p>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada18.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada19.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades" >
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada20.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada21.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>    
+                                    </div>               
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada22.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada23.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada24.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada25.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada26.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada27.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada11.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada12.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>               
+                                </div>  
+                        </div>
+
+                        <div class="tab-pane fade tab-catalogo" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+                                <!-- Catalogo Grid-->
+                                <div class="col-auto">
+                                    <div class="row justify-content-center mb-3">
+                                        <p class="text-center texto-tab-movil">Juveniles</p>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada29.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada30.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades" >
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada31.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada32.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>    
+                                    </div>               
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada33.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada34.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada35.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada36.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada37.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada38.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada39.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada40.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>               
+                                </div>  
+                        </div>
+                        <div class="tab-pane fade tab-catalogo" id="profile3" role="tabpanel" aria-labelledby="profile-tab">
+                                <!-- Catalogo Grid-->
+                                <div class="col-auto">
+                                    <div class="row justify-content-center mb-3">
+                                        <p class="text-center texto-tab-movil">Infantiles</p>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada3.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada37.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades" >
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada25.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada12.png" class="card-img-top card-novedades-img-top" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>    
+                                    </div>               
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada1.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada41.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada23.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada21.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada37.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada15.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada39.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-mb card card-novedades">
+                                            <div class="text-center">
+                                                <img src="/img/portadas/portada26.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>      
+                                    </div>               
+                                </div>  
+                        </div>      
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200"><path fill="#314182" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-sm-auto">
+                    <div class="d-flex align-items-end">
+                        <img src="/img/logo.svg" class="img-fluid logoFooter" alt="logoFooter">
+                        <h1>El Mundo del Lector</h1>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="d-flex align-items-center justify-content-start redesSociales">
+                        <img src="/img/redesSociales/facebook.svg" alt="facebook" srcset="">
+                        <img src="/img/redesSociales/gorjeo.svg" alt="facebook" srcset="">
+                        <img src="/img/redesSociales/instagram.svg" alt="facebook" srcset="">
+                        <img src="/img/redesSociales/pinterest.svg" alt="facebook" srcset="">
+                    </div> 
+                </div>
+       
+            </div>
+            <hr class="br-danger">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-sm">
+                    <p>Copyright © 1995-2021 El Mundo del Lector S.A.</p>
+                    <p>TODOS LOS DERECHOS RESERVADOS.</p>
+                    <p>TACUARÍ 1842 (C1139AAN) CABA - CUIT Nº: 30-53909781-0</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row align-items-center mediosPago">
+                        <div class="col-auto">
+                            <p>Medios de pago:</p>
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/visa.jpg" class="img-fluid" alt="masterCard">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/MasterCard_Logo.svg.png" class="img-fluid" alt="masterCard">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/mercadoPago.png" class="img-fluid" alt="mercadoPago">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/rapipago.png" class="img-fluid" alt="rapiPago">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

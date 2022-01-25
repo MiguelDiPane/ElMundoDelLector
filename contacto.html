@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/flaticon.ico">
+    <title>Contacto</title>
+</head>
+<body>
+    <!--HEADER-->
+    <div class="container-fluid sticky-top barranav">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+                <a class="navbar-brand" href="/index.html"><img src="/img/logo.svg"  class="logo" alt="" srcset="">El Mundo del Lector</a>       
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+                    <a class="nav-link" href="/catalogo.html">Catálogo</a>
+                    <a class="nav-link active" href="/contacto.html">Contacto</a>
+                </div>
+                </div>
+        </nav>
+        <div class="row justify-content-between  buscador">
+            <div class="col-9">
+                <form class="d-flex align-items-center">
+                    <input class="form-control me-2" type="search" placeholder="Buscar por título o autor" aria-label="Search">
+                    <a href="#!"><img src="/img/lupa.svg" alt="" srcset=""></a>
+                </form> 
+            </div>
+            <div class="col-auto">
+                <p id="textoLargo">0 productos | AR$ 0.00</p>
+            </div>
+            <div class="col-auto carrito">
+                <a href="#!"> <img src="/img/carrito.svg" alt="" srcset=""></a> 
+            </div>
+        </div>
+    </div>
+
+    <!--CONTACTO-->
+    <section class="seccion">
+        <h2 class="text-center titulo">Contáctanos</h2>
+        <hr>
+        <p class="text-center subtitulo">Nos interesa saber de ti, envíanos tus consultas</p>
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-md-6">
+                <form class="formularioContacto">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="controlForm" id="email" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="controlForm" id="nombre" placeholder="Tu nombre...">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Tu mensaje</label>
+                        <textarea class="controlForm" id="exampleFormControlTextarea1" rows="4"></textarea>
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Deseo recibir novedades</label>
+                    </div>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>                
+            </div>
+            <div class="col-md-5 order-first order-md-0 text-center">
+                <img src="/img/decorarFondo/contacto.svg" class="img-fluid imgContacto" alt="contacto">
+                <p>Síguenos en nuestras redes</p>
+                <div class="d-flex align-items-center redesSociales">
+                    <img src="/img/redesSociales/facebook.svg" alt="facebook" srcset="">
+                    <img src="/img/redesSociales/gorjeo.svg" alt="facebook" srcset="">
+                    <img src="/img/redesSociales/instagram.svg" alt="facebook" srcset="">
+                    <img src="/img/redesSociales/pinterest.svg" alt="facebook" srcset="">
+                </div> 
+            </div>
+        </div>
+
+    </section>
+
+    <!--MAPA SUCURSALES-->
+    <section class="seccion">
+        <h2 class="text-center">Nuestras sucursales</h2>
+        <hr>
+        <p class="text-center subtitulo">Contamos con mas de 50 locales en todo el pais!</p>
+        <p class="text-center subtitulo">Busca el más próximo a tu localidad.</p>
+        <div class="row justify-content-center align-items-center sucursales">
+            <div class="col-md-5">
+                <img src="/img/decorarFondo/biblioteca.svg" class="img-fluid" alt="contacto">
+            </div>
+            <div class="col-md-5">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.5224178066946!2d-68.5226672497039!3d-31.537274481272572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140feb79c0a57%3A0x710c157ee526069e!2sRectorado%20de%20la%20Universidad%20Nacional%20de%20San%20Juan!5e0!3m2!1ses!2sar!4v1622941914093!5m2!1ses!2sar"></iframe>                
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--FOOTER-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200"><path fill="#314182" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-sm-auto">
+                    <div class="d-flex align-items-end">
+                        <img src="/img/logo.svg" class="img-fluid logoFooter" alt="logoFooter">
+                        <h1>El Mundo del Lector</h1>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="d-flex align-items-center justify-content-start redesSociales">
+                        <img src="/img/redesSociales/facebook.svg" alt="facebook" srcset="">
+                        <img src="/img/redesSociales/gorjeo.svg" alt="facebook" srcset="">
+                        <img src="/img/redesSociales/instagram.svg" alt="facebook" srcset="">
+                        <img src="/img/redesSociales/pinterest.svg" alt="facebook" srcset="">
+                    </div> 
+                </div>
+       
+            </div>
+            <hr class="br-danger">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-sm">
+                    <p>Copyright © 1995-2021 El Mundo del Lector S.A.</p>
+                    <p>TODOS LOS DERECHOS RESERVADOS.</p>
+                    <p>TACUARÍ 1842 (C1139AAN) CABA - CUIT Nº: 30-53909781-0</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row align-items-center mediosPago">
+                        <div class="col-auto">
+                            <p>Medios de pago:</p>
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/visa.jpg" class="img-fluid" alt="masterCard">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/MasterCard_Logo.svg.png" class="img-fluid" alt="masterCard">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/mercadoPago.png" class="img-fluid" alt="mercadoPago">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/rapipago.png" class="img-fluid" alt="rapiPago">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

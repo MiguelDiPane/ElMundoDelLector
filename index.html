@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/libro3d.css">
+    <link rel="icon" href="/img/flaticon.ico">
+    <title>El Mundo del Lector</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <div class="container-fluid sticky-top barranav">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.svg"  class="logo" alt="" srcset="">El Mundo del Lector</a>       
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav links">
+                    <a class="nav-link active links" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link links" href="catalogo.html">Catálogo</a>
+                    <a class="nav-link links" href="contacto.html">Contacto</a>
+                </div>
+                </div>
+        </nav>
+
+        <div class="row justify-content-between  buscador">
+            <div class="col-9">
+                <form class="d-flex align-items-center">
+                    <input class="form-control me-2" type="search" placeholder="Buscar por título o autor" aria-label="Search">
+
+                    <a href="/catalogo.html"><img src="img/lupa.svg" alt="" srcset=""></a>
+                </form> 
+            </div>
+            <div class="col-auto">
+                <p id="textoLargo">0 productos | AR$ 0.00</p>
+            </div>
+            <div class="col-auto carrito">
+                <a href="#!"> <img src="img/carrito.svg" alt="" srcset=""></a> 
+            </div>
+        </div>
+    </div>
+
+    <header class="container-fluid">
+        <div class="row justify-content-center align-items-center encabezado">
+            <div class="col-11">
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6 text-center">
+                                        <h2>Lo mejor de la semana</h2>
+                                        <p>Cada semana seleccionamos lo más destacado del momento y lo traemos para vos</p>
+                                        <p>¡No te lo pierdas!</p>
+                                        <a href="#seccionRecomendados" class="btn">Ver ahora</a>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <img  class="img-fluid" src="img/decorarFondo/mejorSemana.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6 text-center">
+                                        <h2>Visita nuestro catálogo</h2>
+                                        <p>Con más de mil ejemplares disponibles, contamos con el catálogo más grande del pais</p>
+                                        <a href="catalogo.html" class="btn">Ir ahora</a>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <img  class="img-fluid" src="img/decorarFondo/visitaCatalogo.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6 text-center">
+                                        <h2>¡Increíbles descuentos!</h2>
+                                        <p>Aprovecha todas las promociones que tenemos para vos</p>
+                                        <a href="#seccionPromociones" class="btn">Ir ahora</a>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <img  class="img-fluid" src="img/decorarFondo/promociones.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6 text-center">
+                                        <h2>¿Tienes alguna consulta?</h2>
+                                        <p>¡Contáctate con nosotros y déjanos tu mensaje!</p>                  
+                                        <a href="contacto.html" class="btn">Ir ahora</a>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <img  class="img-fluid" src="img/decorarFondo/duda.svg" alt="duda">
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6 text-center">
+                                        <h2>Un mundo de novedades</h2>
+                                        <p>Mira todas las novedades que tenemos para vos</p>
+                                        <a href="#seccionNovedades" class="btn">Descúbrelas ahora</a>
+                                    </div>
+                                    <div class="col-lg-4 text-center">
+                                        <img  class="img-fluid" src="img/decorarFondo/mundoLibro.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 250"><path fill="#314182" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
+
+    <!-- RECOMENDADOS DE LA SEMANA -->
+    <section id="seccionRecomendados" class="container-fluid">
+        <div class="row justify-content-center seccion">
+            <div class="col">
+                <h2   class="text-center">Los recomendados de la semana</h2>
+                <hr>
+                <p class="subtitulo">Selección con las mejores novedades y bestsellers</p>
+                <div  id="siguienteSlide" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel-recomendados">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center recomendado">
+                                    <div class="col-lg-6">
+                                        <h4>Harry Potter y la Piedra Filosofal</h4>
+                                        <h5>J.k. Rowling</h5>
+                                        <p class="text-justify">Cuando Harry Potter cumple 11 años se entera que es huérfano, hijo de dos magos y que posee poderes mágicos. En la Escuela de Magia y Brujería de Hogwarts aprende a jugar el deporte de alturas, Quidditch y juega un emocionante juego de ajedrez, en vías a encarar al Mago Oscuro que está empeñado en destruirlo.</p>
+                                        <a href="/catalogo.html" class="btn">Ver más</a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <!--Libro 3d-->
+                                        <div class="book-container">
+                                            <div class="book">
+                                            <img src="img/portadas/portada1.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center recomendado">
+                                    <div class="col-lg-6">
+                                        <h4>Gambito de dama</h4>
+                                        <h5>Walter Tevis</h5>
+                                        <p class="text-justify">Gambito de dama narra las desventuras de la vida de Harmon desde su infancia en un orfanato hasta su lucha con los sedantes y la adicción al alcohol y su éxito en el mundo del ajedrez profesional.</p>
+                                        <a href="/catalogo.html" class="btn">Ver más</a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <!--Libro 3d-->
+                                        <div class="book-container">
+                                            <div class="book">
+                                            <img src="img/portadas/portada13.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center recomendado">
+                                    <div class="col-lg-6">
+                                        <h4>Prohibido Morir Aqui</h4>
+                                        <h5>Elizabeth Taylor</h5>
+                                        <p class="text-justify">Elegida por The Guardian como una de las mejores novelas de todos los tiempos, candidata al Booker Prize, Prohibido morir aquí es la obra maestra de Elizabeth Taylor</p>
+                                        <a href="/catalogo.html" class="btn">Ver más</a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <!--Libro 3d-->
+                                        <div class="book-container">
+                                            <div class="book">
+                                            <img src="img/portadas/portada12.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#siguienteSlide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#siguienteSlide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- NOVEDADES -->
+    <svg id="seccionNovedades" class="ondas" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 150"><path fill="#F9F9F9" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <section class="container-fluid seccion seccion-novedades">
+        <h2 class="text-center">Novedades</h2>
+        <hr>
+        <p class="subtitulo">Consulta las últimas novedades</p>
+        <div class="row justify-content-center">
+            <!--Novedades slider-->
+            <div class="col-auto">
+                <div class="row">
+                    <div  id="novedadesSlide" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <div class="container">
+                                    <h3 class="text-center tituloCarrusel">Lo último en ficción</h3>
+                                    <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <div class="col card card-novedades">
+                                            <div class="text-center">
+                                                <img src="img/portadas/portada12.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                    <div class="col-auto">
+                                        <div class="col card card-novedades">
+                                            <div class="text-center">
+                                                <img src="img/portadas/portada8.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="container">
+                                    <h3 class="text-center tituloCarrusel">Lo último en policiales</h3>
+                                    <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <div class="col card card-novedades">
+                                            <div class="text-center">
+                                                <img src="img/portadas/portada12.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                    <div class="col-auto">
+                                        <div class="col card card-novedades">
+                                            <div class="text-center">
+                                                <img src="img/portadas/portada8.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="container">
+                                    <h3 class="text-center tituloCarrusel">Lo último en románticos</h3>
+                                    <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <div class="col card card-novedades">
+                                            <div class="text-center">
+                                                <img src="img/portadas/portada12.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                    <div class="col-auto">
+                                        <div class="col card card-novedades">
+                                            <div class="text-center">
+                                                <img src="img/portadas/portada8.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                                            </div>
+                                            <div class="card-body card-novedades-body">
+                                                <h3 class="card-title">Títitulo</h3>
+                                                <h4 class="card-title">Autor</h4>
+                                                <p class="card-text">1.490,0$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <img src="img/decorarFondo/volando.svg" alt="volando" class="img-fluid img-novedades" srcset="">
+                </div>
+
+            </div>
+            <!-- Novedades Grid-->
+            <div class="col-auto order-first order-md-0">
+                <h3 class="text-center">Recien llegados</h3>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada3.png" class="card-img-top card-novedades-img-top" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada4.png" class="card-img-top card-novedades-img-top" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm card card-novedades" >
+                        <div class="text-center">
+                            <img src="img/portadas/portada5.png" class="card-img-top card-novedades-img-top" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada6.png" class="card-img-top card-novedades-img-top" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>      
+                </div>               
+                <div class="row justify-content-center">
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada9.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada10.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada11.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>
+                    <div class="col-sm card card-novedades">
+                        <div class="text-center">
+                            <img src="img/portadas/portada12.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                        </div>
+                        <div class="card-body card-novedades-body">
+                            <h3 class="card-title">Títitulo</h3>
+                            <h4 class="card-title">Autor</h4>
+                            <p class="card-text">1.490,0$</p>
+                        </div>
+                    </div>      
+                </div>
+                <div class="row">
+                    <div class="col text-center text-sm-end mt-2 mb-4">
+                        <a href="catalogo.html" class="btn">Ver más</a>  
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!-- Novedades Bestsellers-->
+        <h4 class="text-center">Bestsellers</h4>
+        <hr>
+        <p class="subtitulo">Lo más leído del mes</p>
+        <div class="row justify-content-center">
+            <div class="row justify-content-center">                 
+                <div class="col-lg card card-novedades">
+                    <div class="text-center">
+                        <img src="img/portadas/portada13.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                    </div>
+                    <div class="card-body card-novedades-body">
+                        <h3 class="card-title">Títitulo</h3>
+                        <h4 class="card-title">Autor</h4>
+                        <p class="card-text">1.490,0$</p>
+                    </div>
+                </div>
+                <div class="col-lg card card-novedades">
+                    <div class="text-center">
+                        <img src="img/portadas/portada14.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                    </div>
+                    <div class="card-body card-novedades-body">
+                        <h3 class="card-title">Títitulo</h3>
+                        <h4 class="card-title">Autor</h4>
+                        <p class="card-text">1.490,0$</p>
+                    </div>
+                </div>
+                <div class="col-lg card card-novedades">
+                    <div class="text-center">
+                        <img src="img/portadas/portada15.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                    </div>
+                    <div class="card-body card-novedades-body">
+                        <h3 class="card-title">Títitulo</h3>
+                        <h4 class="card-title">Autor</h4>
+                        <p class="card-text">1.490,0$</p>
+                    </div>
+                </div>
+                <div class="col-lg card card-novedades">
+                    <div class="text-center">
+                        <img src="img/portadas/portada16.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                    </div>
+                    <div class="card-body card-novedades-body">
+                        <h3 class="card-title">Títitulo</h3>
+                        <h4 class="card-title">Autor</h4>
+                        <p class="card-text">1.490,0$</p>
+                    </div>
+                </div>
+                <div class="col-lg card card-novedades">
+                    <div class="text-center">
+                        <img src="img/portadas/portada17.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                    </div>
+                    <div class="card-body card-novedades-body">
+                        <h3 class="card-title">Títitulo</h3>
+                        <h4 class="card-title">Autor</h4>
+                        <p class="card-text">1.490,0$</p>
+                    </div>
+                </div>
+                <div class="col-lg card card-novedades">
+                    <div class="text-center">
+                        <img src="img/portadas/portada18.png" class="card-img-top card-novedades-img-top img-fluid" alt="portada">
+                    </div>
+                    <div class="card-body card-novedades-body">
+                        <h3 class="card-title">Títitulo</h3>
+                        <h4 class="card-title">Autor</h4>
+                        <p class="card-text">1.490,0$</p>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>    
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 150"><path fill="#F9F9F9" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
+
+    <!-- PROMOCIONES -->
+    <section id="seccionPromociones" class="container-fluid  seccion">
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2 class="text-center">Promociones</h2>
+                <hr>
+                <p class="subtitulo">Aprovecha estas ofertas antes de que finalicen</p>
+                <div  id="promocionesSlide" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel-promos">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                    <img src="img/decorarFondo/mejorSemana.svg" class="card-img-top" alt="promo1"/>
+                                    <div class="card-body">
+                                        <h3 class="card-text">Compra en grande</h3>
+                                        <h4 class="card-title">40% de descuento llevando una saga</h4>
+                                        <p class="card-text">Visita nuestro catálogo y llévate una saga completa al mejor precio del mercado</p>
+                                        <a href="catalogo.html" class="btn">Aprovecha ahora</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-sm-block">
+                                    <div class="card">
+                                    <img src="img/decorarFondo/leyendolibro3.svg" class="card-img-top" alt="promo2"/>
+                                    <div class="card-body">
+                                        <h3 class="card-text">Compra Ebook</h3>
+                                        <h4 class="card-title">50% de descuento en libros digitales</h4>
+                                        <p class="card-text">Elegi el libro desde nuestro catálogo y te lo llevamos a tu domicilio sin costos de envío</p>
+                                        <a href="#!" class="btn">Aprovecha ahora</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-sm-block">
+                                    <div class="card">
+                                    <img src="img/decorarFondo/leyendolibro5.svg" class="card-img-top" alt="promo3"/>
+                                    <div class="card-body">
+                                        <h3 class="card-text">Quedate en casa!</h3>
+                                        <h4 class="card-title">30% de descuento en compras online</h4>
+                                        <p class="card-text">Elegi el libro desde nuestro catálogo y te lo llevamos a tu domicilio sin costos de envío</p>
+                                        <a href="#!" class="btn">Aprovecha ahora</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                    <img src="img/decorarFondo/mejorSemana.svg" class="card-img-top" alt="promo1"/>
+                                    <div class="card-body">
+                                        <h3 class="card-text">Compra en grande</h3>
+                                        <h4 class="card-title">40% de descuento llevando una saga</h4>
+                                        <p class="card-text">Visita nuestro catálogo y llévate una saga completa al mejor precio del mercado</p>
+                                        <a href="catalogo.html" class="btn">Aprovecha ahora</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-sm-block">
+                                    <div class="card">
+                                    <img src="img/decorarFondo/leyendolibro3.svg" class="card-img-top" alt="promo2"/>
+                                    <div class="card-body">
+                                        <h3 class="card-text">Compra Ebook</h3>
+                                        <h4 class="card-title">50% de descuento en libros digitales</h4>
+                                        <p class="card-text">Elegi el libro desde nuestro catálogo y te lo llevamos a tu domicilio sin costos de envío</p>
+                                        <a href="#!" class="btn">Aprovecha ahora</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-sm-block">
+                                    <div class="card">
+                                    <img src="img/decorarFondo/leyendolibro5.svg" class="card-img-top" alt="promo3"/>
+                                    <div class="card-body">
+                                        <h3 class="card-text">Quedate en casa!</h3>
+                                        <h4 class="card-title">30% de descuento en compras online</h4>
+                                        <p class="card-text">Elegi el libro desde nuestro catálogo y te lo llevamos a tu domicilio sin costos de envío</p>
+                                        <a href="#!" class="btn">Aprovecha ahora</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="carousel-control-prev position-relative" type="button" data-bs-target="#promocionesSlide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next position-relative" type="button" data-bs-target="#promocionesSlide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </section>
+    
+    <!-- EVENTOS --> 
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 150"><path fill="#F9F9F9" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>  
+    <section class="container-fluid seccion seccion-eventos">
+        <div class="row ">
+            <div class="col">
+                <h2 class="text-center">Eventos</h2>
+                <hr>
+                <p class="subtitulo">Forma parte de nuestra comunidad de lectores en increibles eventos mensuales</p>
+                <div class="row justify-content-around eventos">
+                    <div class="col-lg-5">
+                        <h4 class="text-center">Últimos eventos</h4>
+                        <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <iframe class="video" src="https://www.youtube.com/embed/D27iguBfuK0?controls=0&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                               
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <iframe class="video"  src="https://www.youtube.com/embed/1m20YptiR5A?controls=0&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <iframe  class="video" src="https://www.youtube.com/embed/-flpP2qYG44?controls=0&amp;start=17" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <h4>Participa con nosotros</h4>
+                        <p>Síguenos en nuestras redes y entérate de todas nuestras actividades</p>
+                        <img src="img/decorarFondo/facebook2.svg" class="imagenEventos" alt="redes-sociales" srcset="">
+                        <div class="d-flex align-items-center redesSociales">
+                            <img src="img/redesSociales/facebook.svg" alt="facebook" srcset="">
+                            <img src="img/redesSociales/gorjeo.svg" alt="facebook" srcset="">
+                            <img src="img/redesSociales/instagram.svg" alt="facebook" srcset="">
+                            <img src="img/redesSociales/pinterest.svg" alt="facebook" srcset="">
+                        </div> 
+                    </div>
+                </div>
+                <h3 class="text-center">Presentaciones</h3>
+                <hr>
+                <p class="subtitulo">Reconocidos autores presentan sus obras en nuestros locales</p>
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner carrusel-eventos">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-lg-4">
+                                    <img
+                                        src="img/carruselEventos/evento1.jpg"
+                                        class="img-fluid imagenEventos"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img
+                                    src="img/carruselEventos/evento2.jpg"
+                                        class="img-fluid imagenEventos"
+                                        alt="..."
+                                    />
+                                </div>
+    
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img
+                                    src="img/carruselEventos/evento3.jpg"
+                                        class="img-fluid imagenEventos"
+                                        alt="..."
+                                    />
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <img
+                                    src="img/carruselEventos/evento4.jpg"
+                                        class="img-fluid imagenEventos"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img
+                                    src="img/carruselEventos/evento5.jpg"
+                                        class="img-fluid imagenEventos"
+                                        alt="..."
+                                    />
+                                </div>
+        
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img
+                                    src="img/carruselEventos/evento6.jpg"
+                                        class="img-fluid imagenEventos"
+                                        alt="..."
+                                    />
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    
+        </div> 
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 150"><path fill="#F9F9F9" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> 
+
+    <!-- PROVEEDORES -->
+    <section class="container-fluid seccion-proveedores">
+        <div class="row justify-content-center seccion ">
+            <div class="col">
+                <h2 class="text-center">Nuestros proveedores</h2>
+                <hr>
+                <p class="subtitulo">Trabajamos junto a las mejores casas editoriales para traerte el catálogo más variado del pais.</p>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img src="img/editoriales/alfaguara.jpg" class="img-fluid" alt="alfaguara">
+                    </div>
+                    <div class="col">
+                        <img src="img/editoriales/anagrama.jpg" class="img-fluid" alt="anagrama">
+                    </div>
+                    <div class="col">
+                        <img src="img/editoriales/penguin.png" class="img-fluid" alt="penguin">
+                    </div>
+                    <div class="col">
+                        <img src="img/editoriales/planeta.jpg"  class="img-fluid" alt="planeta">
+                    </div>
+                    <div class="col">
+                        <img src="img/editoriales/Salamandra.jpg" class="img-fluid" alt="salamandra">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 200"><path fill="#314182" fill-opacity="1" d="M0,128L80,106.7C160,85,320,43,480,42.7C640,43,800,85,960,90.7C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-sm-auto">
+                    <div class="d-flex align-items-end">
+                        <img src="img/logo.svg" class="img-fluid logoFooter" alt="logoFooter">
+                        <h1>El Mundo del Lector</h1>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="d-flex align-items-center justify-content-start redesSociales">
+                        <img src="img/redesSociales/facebook.svg" alt="facebook" srcset="">
+                        <img src="img/redesSociales/gorjeo.svg" alt="facebook" srcset="">
+                        <img src="img/redesSociales/instagram.svg" alt="facebook" srcset="">
+                        <img src="img/redesSociales/pinterest.svg" alt="facebook" srcset="">
+                    </div> 
+                </div>
+       
+            </div>
+            <hr class="br-danger">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-sm">
+                    <p>Copyright © 1995-2021 El Mundo del Lector S.A.</p>
+                    <p>TODOS LOS DERECHOS RESERVADOS.</p>
+                    <p>TACUARÍ 1842 (C1139AAN) CABA - CUIT Nº: 30-53909781-0</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row align-items-center mediosPago">
+                        <div class="col-auto">
+                            <p>Medios de pago:</p>
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/visa.jpg" class="img-fluid" alt="masterCard">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/MasterCard_Logo.svg.png" class="img-fluid" alt="masterCard">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/mercadoPago.png" class="img-fluid" alt="mercadoPago">
+                        </div>
+                        <div class="col-auto">
+                            <img src="/img/mediosPago/rapipago.png" class="img-fluid" alt="rapiPago">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
